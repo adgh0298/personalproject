@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    color: #d4d0d0;
+    background:black;
+}
+
+/* Estilos Generales*/
+
+.image-container{
+    display: flex;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+/* Estilos del Header*/
+
+header{
+    background: rgb(51,51,51);
+    background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(31,31,31,1) 14%, rgba(0,0,0,1) 81%);
+    height: 100vh;
+}
+
+nav {
+    background-color: transparent;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#Logo {
+    width: 100px;
+}
+/* Menu de Navegación*/
+
+#menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-list li {
+    display: inline;
+    margin-right: 50px;
+    font-size: small;
+}
+
+#menu-list li a {
+    text-decoration: none; 
+    color: #555;
+    transition: color 0.3s, transform 0.5s;
+}
+
+#menu-list li a.active {
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#menu-list a:hover {
+    transform: scale(1.5);
+    color: #fff; /* Cambia el color al pasar el mouse */
+}
+
+
+/* Estilos del Hero*/
+#Hero {
+    text-align: center;
+    padding: 100px;
+}
+
+.left-text,
+.centered-text,
+.right-text {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.centered-text {
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -7px;
+}
+
+.left-text {
+    text-align:left;
+    letter-spacing: 3px;
+    margin-left: 450px;
+
+}
+
+.right-text {
+    text-align: left;
+    letter-spacing: 3px;
+    margin-left: 690px;
+}
+
+.right-text, .left-text {
+    color: #BABABA;
+    font-size: 12px;
+}
+
+.scroll {
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    color: #555;
+    padding: 10px;
+}
+
+.social-icons {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   position: fixed;
+   bottom: 50px;
+   left: 50px;
+   display: flex;
+   flex-direction: column;
+}
+
+.social-icons li {
+    margin-bottom: 20px;
+}
+
+.social-icons a img  {
+    width: 25px;
+    height: auto;
+    display: block;
+    opacity: 0.2;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Estilos de Productos*/
+
+#product1 {
+    background: rgb(51,51,51);
+    background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(31,31,31,1) 14%, rgba(0,0,0,1) 81%);
+    width: 95vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:;
+}
+
+.image {
+    margin: 20px 10px;
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.image img {
+    margin: 10px;
+    max-width: 300px;
+    height: auto;
+    filter: blur(3px);
+    opacity: 0.6;
+}
+
+.active img {
+    margin-left: 50px;
+    margin-right: 50px;
+    transform: scale(1.2);
+    max-width: 500px;
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.gallery-info {
+    margin-top: -20px;
+    text-align: center;
+}
+
+.gallery-info h2 {
+    transform: scale(1);
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.gallery-info p {
+    padding-left: 400px ;
+    padding-right: 400px;
+    margin-bottom: 35px;
+}
+
+button {
+    letter-spacing: 3px;
+    margin-top: 10px;
+    padding: 10px 50px;
+    background-color: #303030;
+    color: #d4d0d0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+/* Formulario de contacto*/
+#contact{
+    background: rgb(51,51,51);
+    background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(31,31,31,1) 14%, rgba(0,0,0,1) 81%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contac-info, #contact-form {
+    flex: 0 0 48%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#contact-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#contact-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.60); /* Agrega una sombra alrededor del formulario */
+    padding: 30px; /* Agrega un espacio interno alrededor del formulario */
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    display: block; /* Cambia la visualización de los elementos a bloque */
+    margin-bottom: 10px; /* Agrega espacio entre los elementos */
+}
+
+#contact-form input {
+    width: 90%; /* Establece el ancho del input al 90% del contenedor */
+    height: 33px;
+}
+
+#contact-form button {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    color: #d4d0d0;
+}
+
+#contact-form button:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+
+#contact-form textarea {
+    width: 90%; /* Establece el ancho del input al 90% del contenedor */
+    height: 33px;
+}
+
+#contact-form h2, 
+#contact-info h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+
+}
+
+#contact-info .description-contact-info {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#contact-info .new-line {
+    margin-top: 20px;
+}
+
+#contact-info h3 {
+    line-height: 2;
+}
+
+#contact-form label{
+    display: none;
+}
+
+#contact-form input,
+#contact-form textarea {
+    border: none;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    padding: 5px;
+    color: #666666;
+}
